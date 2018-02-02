@@ -1,6 +1,6 @@
 # Flicker API Application
 
-# Objectives
+## Objectives
 - Use Singleton
 - Use completion handlers
 - Use collection view
