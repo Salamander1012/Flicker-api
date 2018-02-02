@@ -7,6 +7,7 @@
 //
 
 import Foundation
+//testing git
 
 //creates url for flicker.photos.search method
 struct FlickrImageSearchURL {
