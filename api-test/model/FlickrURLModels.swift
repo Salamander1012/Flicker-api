@@ -15,7 +15,7 @@ struct FlickrImageSearchURL {
     
     init(tags: String) {
         //insert apikey below if pulled from github
-        self.url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&tags=" + tags + "&api_key=" + API_KEY.keyInstance.key + "&format=json&nojsoncallback=1"
+        self.url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&tags=" + tags + "&api_key=" + API_KEY + "&format=json&nojsoncallback=1"
         
     }
 }

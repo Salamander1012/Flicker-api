@@ -17,11 +17,11 @@
 		741899512020F76A00C8FC2A /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741899502020F76A00C8FC2A /* models.swift */; };
 		74777B142024DE3F00053313 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74777B132024DE3F00053313 /* Service.swift */; };
 		74777B162025074800053313 /* FlickrURLModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74777B152025074800053313 /* FlickrURLModels.swift */; };
-		74777B1820250C2600053313 /* API_KEYS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74777B1720250C2600053313 /* API_KEYS.swift */; };
 		7489FF5B202226CD0087FB47 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7489FF5A202226CD0087FB47 /* CourseTableViewCell.swift */; };
 		7E25CF8CDAF20A5B31BB531D /* Pods_api_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD99BEAB3B9992562518BD3 /* Pods_api_test.framework */; };
 		9D88AE1E3D8812B6997590DE /* Pods_api_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B29FEEBADD3C1707E9F50FD /* Pods_api_testTests.framework */; };
 		C5403C1E705DBDA92A71E5F2 /* Pods_api_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276BD5F6D61E913B8F347422 /* Pods_api_testUITests.framework */; };
+		C934B5FF20268A7000279882 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C934B5FE20268A7000279882 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,8 @@
 		741899502020F76A00C8FC2A /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
 		74777B132024DE3F00053313 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		74777B152025074800053313 /* FlickrURLModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrURLModels.swift; sourceTree = "<group>"; };
-		74777B1720250C2600053313 /* API_KEYS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API_KEYS.swift; sourceTree = "<group>"; };
 		7489FF5A202226CD0087FB47 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		C934B5FE20268A7000279882 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CBABB1A4568833D12DB1FA4F /* Pods-api-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-api-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-api-test/Pods-api-test.debug.xcconfig"; sourceTree = "<group>"; };
 		D4120DCABBCF6BC012BE8CE4 /* Pods-api-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-api-testUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-api-testUITests/Pods-api-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FEF972A92C50A8A3A676F78D /* Pods-api-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-api-testTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-api-testTests/Pods-api-testTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +139,7 @@
 				7418994C2020E20E00C8FC2A /* view */,
 				7418994B2020E20700C8FC2A /* model */,
 				7418991D2020DDB900C8FC2A /* AppDelegate.swift */,
+				C934B5FE20268A7000279882 /* Constants.swift */,
 				741899242020DDB900C8FC2A /* Assets.xcassets */,
 				741899262020DDB900C8FC2A /* LaunchScreen.storyboard */,
 				741899292020DDB900C8FC2A /* Info.plist */,
@@ -169,7 +170,6 @@
 			children = (
 				741899502020F76A00C8FC2A /* models.swift */,
 				74777B152025074800053313 /* FlickrURLModels.swift */,
-				74777B1720250C2600053313 /* API_KEYS.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -506,10 +506,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7489FF5B202226CD0087FB47 /* CourseTableViewCell.swift in Sources */,
-				74777B1820250C2600053313 /* API_KEYS.swift in Sources */,
 				741899202020DDB900C8FC2A /* ViewController.swift in Sources */,
 				74777B162025074800053313 /* FlickrURLModels.swift in Sources */,
 				7418991E2020DDB900C8FC2A /* AppDelegate.swift in Sources */,
+				C934B5FF20268A7000279882 /* Constants.swift in Sources */,
 				741899512020F76A00C8FC2A /* models.swift in Sources */,
 				74777B142024DE3F00053313 /* Service.swift in Sources */,
 			);
@@ -681,6 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = "api-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanfakhri.Api-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -697,6 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C3YP8P798R;
 				INFOPLIST_FILE = "api-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salmanfakhri.Api-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";

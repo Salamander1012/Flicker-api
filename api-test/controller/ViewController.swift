@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         searchBar.delegate = self
 
         
-        Service.sharedInstance.getPhotosData(tags: "philly,philadelphia") { (photos) in
+        Service.sharedInstance.getPhotosData(tags: "rutgers") { (photos) in
             print("got photos")
             self.photos = photos.photo
             self.currentPhotos = photos.photo
