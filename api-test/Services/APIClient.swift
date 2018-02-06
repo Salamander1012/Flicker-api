@@ -9,12 +9,12 @@
 import Foundation
 import Alamofire
 
-struct Service {
+class APIClient {
     
-    static let sharedInstance = Service()
+
     
     
-    func getPhotosData(tags: String, completion: @escaping (Photos)-> ()) {
+    static func getPhotosData(tags: String, completion: @escaping (Photos)-> ()) {
         print("getting photos data...")
         let requestURL = FlickrImageSearchURL(tags: tags)
         Alamofire.request(requestURL.url).response { response in

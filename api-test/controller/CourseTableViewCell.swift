@@ -12,9 +12,13 @@ class CourseTableViewCell: UITableViewCell {
 
 
     @IBOutlet weak var courseLabel: UILabel!
+    @IBOutlet weak var thumbnail: UIImageView!
     
-    func setUpCell(title: String) {
+    func setUpCell(title: String, imageSrc: String) {
         courseLabel.text = title
+        let data = try? Data(contentsOf: URL(string: imageSrc)!)
+        thumbnail.image = UIImage(data: data!)
+        
     }
     
     override func awakeFromNib() {
