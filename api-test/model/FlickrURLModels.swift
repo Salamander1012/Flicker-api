@@ -24,6 +24,6 @@ struct FlickrImageURL {
     let url: String
     
     init(photo: Photo) {
-        self.url = "https://farm\(photo.farm).staticflickr.com/\(photo.server)/\(photo.id)_\(photo.secret)_t.jpg"
+        self.url = "https://farm\(photo.farm).staticflickr.com/\(photo.server)/\(photo.id)_\(photo.secret)_n.jpg"
     }
 }
