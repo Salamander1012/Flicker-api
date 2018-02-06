@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         searchBar.delegate = self
 
         
-        APIClient.getPhotosData(tags: "rutgers") { (photos) in
+        APIClient.getPhotosData(tags: "philadelphia") { (photos) in
             print("got photos")
             self.photos = photos.photo
             self.currentPhotos = photos.photo
