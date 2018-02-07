@@ -25,7 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uje-Qr-VON">
-                                <rect key="frame" x="0.0" y="150" width="375" height="517"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="200" id="bPf-Eo-NwF" customClass="CourseTableViewCell" customModule="api_test" customModuleProvider="target">
@@ -88,34 +88,23 @@
                                     <constraint firstAttribute="height" constant="50" id="xOb-vB-I7c"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="k8H-j4-JF2">
-                                <rect key="frame" x="0.0" y="94" width="375" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="2jl-jj-tpr"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Uje-Qr-VON" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="61c-dD-YDF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rHw-HE-UgL" secondAttribute="trailing" id="8K9-Xh-iYu"/>
-                            <constraint firstItem="k8H-j4-JF2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FJr-bu-GPB"/>
+                            <constraint firstItem="Uje-Qr-VON" firstAttribute="top" secondItem="SuL-zX-HMC" secondAttribute="bottom" constant="20" id="JhN-BI-38Y"/>
                             <constraint firstItem="SuL-zX-HMC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MEv-Rf-qKy"/>
                             <constraint firstItem="rHw-HE-UgL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O6Z-k2-6B2"/>
                             <constraint firstItem="SuL-zX-HMC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="44" id="Rae-6U-GQi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SuL-zX-HMC" secondAttribute="trailing" id="Y3h-lg-UPG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uje-Qr-VON" secondAttribute="trailing" id="nGf-4R-zDo"/>
-                            <constraint firstItem="k8H-j4-JF2" firstAttribute="top" secondItem="SuL-zX-HMC" secondAttribute="bottom" id="oQF-Y0-cCr"/>
                             <constraint firstItem="rHw-HE-UgL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qXO-t9-l0Q"/>
-                            <constraint firstItem="k8H-j4-JF2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="t9x-CD-ztL"/>
-                            <constraint firstItem="Uje-Qr-VON" firstAttribute="top" secondItem="k8H-j4-JF2" secondAttribute="bottom" id="uhn-bU-4LX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uje-Qr-VON" secondAttribute="bottom" id="ycp-uh-HnH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="searchBar" destination="k8H-j4-JF2" id="0Fr-jO-9HR"/>
                         <outlet property="tableView" destination="Uje-Qr-VON" id="Xus-M4-BLc"/>
                     </connections>
                 </viewController>

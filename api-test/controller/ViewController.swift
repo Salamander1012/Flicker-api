@@ -31,10 +31,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        searchBar.delegate = self
+
 
         
-        APIClient.getPhotosData(tags: "philadelphia") { (photos) in
+        APIClient.getPhotosData(tags: "rutgers") { (photos) in
             print("got photos")
             self.photos = photos.photo
             self.currentPhotos = photos.photo
@@ -69,21 +69,5 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-extension ViewController: UISearchBarDelegate {
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        
-        if searchText == "" {
-            currentPhotos = photos
-            tableView.reloadData()
-            return
-        }
-        currentPhotos = photos.filter({ photo -> Bool in
-            photo.title.lowercased().contains(searchText.lowercased())
-        })
-    }
-    
-    
-}
+
 
